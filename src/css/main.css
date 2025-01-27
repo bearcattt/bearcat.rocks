@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Press Start 2P', sans-serif;
     background-color: #121212;
     margin: 0;
     padding: 0;
@@ -11,47 +11,13 @@ body {
     color: #e0e0e0;
 }
 
-.projects {
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #2a2a2a;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.projects h3 {
-    font-size: 2em;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.projects ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.projects ul li {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #b0bec5;
-}
-
-.projects ul li a {
-    color: #80cbc4;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.projects ul li a:hover {
-    color: #4db6ac;
-    text-decoration: underline;
-    transform: scale(1.05);
+#banner {
+    width: 100%; 
+    max-height: 600px; 
+    object-fit: cover;
+    border-radius: 12px; 
+    margin-bottom: 20px;
+    display: block;
 }
 
 h2 {
@@ -116,4 +82,47 @@ p {
 .container a:hover {
     text-decoration: underline;
     color: #4db6ac;
+}
+
+.projects, .socials {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.projects h3, .socials h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.projects ul, .socials ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.projects ul li, .socials ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #b0bec5;
+}
+
+.projects ul li a, .socials ul li a {
+    color: #80cbc4;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.projects ul li a:hover, .socials ul li a:hover {
+    color: #4db6ac;
+    text-decoration: underline;
+    transform: scale(1.05);
 }

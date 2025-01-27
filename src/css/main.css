@@ -12,6 +12,7 @@ body {
 }
 #banner {
     width: 100%;
+    object-fit: cover;
     height: 88px;
     border-radius: 12px;
     margin-bottom: 20px;

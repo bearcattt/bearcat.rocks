@@ -2,7 +2,10 @@
 
 body {
     font-family: 'Press Start 2P', sans-serif;
-    background-color: #121212;
+    background-image: url('/src/image/bg.jpeg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center; 
     margin: 0;
     padding: 0;
     text-align: center;
@@ -14,11 +17,13 @@ body {
 }
 
 #banner {
-    width: 100%; 
+    width: 158px; 
+    height: 190px;
     max-height: 600px; 
     object-fit: cover;
     border-radius: 12px; 
     margin-bottom: 20px;
+    margin-right: 25px;
     display: block;
 }
 
@@ -28,6 +33,9 @@ h1, h2 {
     font-size: 2.5em;
     color: #ffffff;
     line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: 700;
     text-transform: capitalize;
 }
@@ -54,14 +62,22 @@ a:hover {
 }
 
 .container {
-    padding: 40px;
-    background-color: #1c1c1c;
+    padding: 20px;
+    background-color: rgba(28, 28, 28, 0.4);
     border-radius: 12px;
     max-width: 900px;
+    width: 100%;
+    box-sizing: border-box; 
     margin: 20px auto;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
     font-size: 1.1em;
     text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 90vh;
+    overflow: auto; 
 }
 
 .container h2 {

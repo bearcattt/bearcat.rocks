@@ -1,18 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    font-family: 'Press Start 2P', sans-serif;
     background-image: url('/src/image/bg.jpeg');
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center center; 
-    margin: 0;
-    padding: 0;
-    text-align: center;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: #e0e0e0;
 }
 
@@ -20,50 +12,35 @@ body {
     width: 158px; 
     height: 190px;
     max-height: 600px; 
+    margin-right: 20px;
+    position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); 
     object-fit: cover;
     border-radius: 12px; 
-    margin-bottom: 20px;
-    margin-right: 25px;
     display: block;
 }
 
-h1, h2 {
-    font-family: 'Press Start 2P', sans-serif;
+h1, h2, p {
     margin-top: 20px;
     font-size: 2.5em;
     color: #ffffff;
+    display: flex;
+    width: 100%;
+    padding-left: 0;
     line-height: 1.4;
+    display: flex;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    text-transform: capitalize;
-}
-
-p {
-    font-family: 'Press Start 2P', sans-serif;
-    font-size: 1.2em;
-    color: #b0bec5;
-    line-height: 1.8;
-    max-width: 700px;
-    margin: 20px auto;
-}
-
-a {
-    color: #80cbc4;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    text-decoration: underline;
-    color: #4db6ac;
 }
 
 .container {
     padding: 20px;
-    background-color: rgba(28, 28, 28, 0.4);
+    background-color: rgba(28, 28, 28, 0.6);
     border-radius: 12px;
     max-width: 900px;
     width: 100%;
@@ -103,46 +80,26 @@ a:hover {
     text-decoration: underline;
     color: #4db6ac;
 }
-
-.projects, .socials {
-    margin-top: 30px;
+#links {
+    margin-top: 200px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     padding: 20px;
-    background-color: #2a2a2a;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    max-width: 800px;
+    margin: 20px auto;
 }
 
-.projects h3, .socials h3 {
-    font-size: 1.5em;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
+#links img {
+    transition: transform 0.3s ease;
+    width: 40px;
+    height: auto;
+}
+#links img:hover {
+    transform: scale(1.2); 
 }
 
-.projects ul, .socials ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.projects ul li, .socials ul li {
-    margin: 10px 0;
-    font-size: 1.2em;
-    color: #b0bec5;
-}
-
-.projects ul li a, .socials ul li a {
-    color: #80cbc4;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
-
-.projects ul li a:hover, .socials ul li a:hover {
-    color: #4db6ac;
-    text-decoration: underline;
-    transform: scale(1.05);
-}

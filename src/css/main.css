@@ -28,7 +28,10 @@ body {
     display: block;
 }
 
-
+#him {
+    margin-top: -29px;
+    margin-bottom: 29px
+}
 h1, h2, p {
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 20px;

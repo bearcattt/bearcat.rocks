@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+h2 {
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 
 body {
     background-image: url('/src/image/bg.jpeg');
     background-repeat: no-repeat; 
     background-size: cover;
-    background-position: center center; 
+    background-position: center; 
     height: 100vh;
     color: #e0e0e0;
 }
@@ -22,7 +28,9 @@ body {
     display: block;
 }
 
+
 h1, h2, p {
+    font-family: 'Roboto Condensed', sans-serif;
     margin-top: 20px;
     font-size: 2.5em;
     color: #ffffff;

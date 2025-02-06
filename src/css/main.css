@@ -1,48 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-h2 {
-    font-weight: 700;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 body {
     background-image: url('/src/image/bg.jpeg');
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; 
-    height: 100vh; /* Full screen height */
-    overflow: hidden; /* Prevent scrolling */
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
     color: #e0e0e0;
-    margin: 0; /* Ensure no additional margin */
-}
-
-#banner {
-    width: 158px; 
-    height: 190px;
-    max-height: 600px; 
-    margin-right: 20px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    object-fit: cover;
-    border-radius: 12px;
-    display: block;
-}
-
-#him {
-    margin-top: -29px;
-    margin-bottom: 29px;
+    margin: 0;
 }
 
 h1, h2, p {
     font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 20px;
-    font-size: 2.5em;
+    font-weight: 700;
     color: #ffffff;
     text-align: center;
     line-height: 1.4;
-    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+p {
+    font-size: 1.25em;
+    color: #b0bec5;
+    line-height: 1.7;
 }
 
 .container {
@@ -51,30 +35,19 @@ h1, h2, p {
     border-radius: 12px;
     max-width: 900px;
     width: 100%;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     margin: 20px auto;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    font-size: 1.1em;
-    text-align: left;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 90vh;
-    overflow: hidden; /* Prevent scrolling within the container */
+    overflow: hidden;
 }
 
 .container h2 {
-    font-size: 2.8em;
-    font-weight: 700;
     margin-bottom: 15px;
-}
-
-.container p {
-    font-size: 1.25em;
-    color: #b0bec5;
-    line-height: 1.7;
-    margin-top: 15px;
 }
 
 .container a {
@@ -86,6 +59,18 @@ h1, h2, p {
 .container a:hover {
     text-decoration: underline;
     color: #4db6ac;
+}
+
+#banner {
+    width: 158px;
+    height: 190px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
 }
 
 #links {
@@ -109,36 +94,31 @@ h1, h2, p {
 }
 
 #links img:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
     #banner {
-        width: 100px; /* Smaller size for mobile */
-        height: 100px; /* Keep it square for the circle effect */
-        position: relative; /* Adjust positioning for mobile */
-        margin: 0 auto 20px auto; /* Center banner and add spacing below */
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px auto;
         top: 0;
-        transform: none; /* Remove desktop positioning styles */
-        border-radius: 50%; /* Make the banner circular */
+        transform: none;
+        border-radius: 50%;
     }
 
-    h1, h2, p {
+    h1, h2 {
         font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
     }
 
     .container {
         padding: 15px;
         font-size: 0.9em;
-    }
-
-    .container h2 {
-        font-size: 2em;
-    }
-
-    .container p {
-        font-size: 1em;
     }
 
     #links {

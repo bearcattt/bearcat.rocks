@@ -10,10 +10,10 @@ body {
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center; 
-    height: 100vh; /* Full screen height */
-    overflow: hidden; /* Prevent scrolling */
+    height: 100vh; 
+    overflow: hidden; 
     color: #e0e0e0;
-    margin: 0; /* Ensure no additional margin */
+    margin: 0; 
 }
 
 #banner {
@@ -61,7 +61,7 @@ h1, h2, p {
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: 90vh;
-    overflow: hidden; /* Prevent scrolling within the container */
+    overflow: hidden;  
 }
 
 .container h2 {
@@ -112,16 +112,16 @@ h1, h2, p {
     transform: scale(1.2); 
 }
 
-/* Mobile adjustments */
+
 @media (max-width: 768px) {
     #banner {
-        width: 100px; /* Smaller size for mobile */
-        height: 100px; /* Keep it square for the circle effect */
-        position: relative; /* Adjust positioning for mobile */
-        margin: 0 auto 20px auto; /* Center banner and add spacing below */
+        width: 100px; 
+        height: 100px; 
+        position: relative; 
+        margin: 0 auto 20px auto; 
         top: 0;
-        transform: none; /* Remove desktop positioning styles */
-        border-radius: 50%; /* Make the banner circular */
+        transform: none; 
+        border-radius: 50%; 
     }
 
     h1, h2, p {

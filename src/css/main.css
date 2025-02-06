@@ -20,9 +20,9 @@ body {
     max-height: 600px; 
     margin-right: 20px;
     position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%); 
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
     object-fit: cover;
     border-radius: 12px; 
     display: block;
@@ -30,18 +30,17 @@ body {
 
 #him {
     margin-top: -29px;
-    margin-bottom: 29px
+    margin-bottom: 29px;
 }
+
 h1, h2, p {
     font-family: 'Roboto Condensed', sans-serif;
     margin-top: 20px;
     font-size: 2.5em;
     color: #ffffff;
-    display: flex;
     width: 100%;
     padding-left: 0;
     line-height: 1.4;
-    display: flex;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -91,8 +90,9 @@ h1, h2, p {
     text-decoration: underline;
     color: #4db6ac;
 }
+
 #links {
-    margin-top: 200px;
+    margin-top: 50px;
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -100,9 +100,10 @@ h1, h2, p {
     gap: 15px;
     padding: 20px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    width: 48%;
+    width: 80%;
     max-width: 800px;
     margin: 20px auto;
+    flex-wrap: wrap;
 }
 
 #links img {
@@ -110,7 +111,53 @@ h1, h2, p {
     width: 40px;
     height: auto;
 }
+
 #links img:hover {
     transform: scale(1.2); 
+}
+
+@media (max-width: 768px) {
+    h1, h2, p {
+        font-size: 1.8em;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #banner {
+        width: 120px;
+        height: 150px;
+    }
+
+    #links {
+        width: 100%;
+    }
+
+    #links img {
+        width: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, p {
+        font-size: 1.5em;
+    }
+
+    #banner {
+        width: 100px;
+        height: 130px;
+    }
+
+    #links {
+        gap: 10px;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #links img {
+        width: 30px;
+    }
 }
 

@@ -22,9 +22,9 @@ body {
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translateY(-50%); 
+    transform: translateY(-50%);
     object-fit: cover;
-    border-radius: 12px; 
+    border-radius: 12px;
     display: block;
 }
 
@@ -38,13 +38,9 @@ h1, h2, p {
     margin-top: 20px;
     font-size: 2.5em;
     color: #ffffff;
-    display: flex;
-    width: 100%;
+    text-align: center; /* Center-align text */
     line-height: 1.4;
-    justify-content: center;
-    align-items: center;
     font-weight: 700;
-    text-align: center;
 }
 
 .container {
@@ -117,13 +113,12 @@ h1, h2, p {
 /* Mobile adjustments */
 @media (max-width: 768px) {
     #banner {
-        width: 80px; /* Smaller banner size */
-        height: 100px;
-        position: relative; /* Adjust to no longer overlap */
-        margin: 0 auto; /* Center banner horizontally */
-        display: block;
+        width: 100px; /* Smaller size for mobile */
+        height: 120px;
+        position: relative; /* Adjust positioning for mobile */
+        margin: 0 auto 20px auto; /* Center banner and add spacing below */
         top: 0;
-        transform: none; /* Remove translateY adjustment */
+        transform: none; /* Remove desktop positioning styles */
     }
 
     h1, h2, p {
@@ -136,8 +131,7 @@ h1, h2, p {
     }
 
     .container h2 {
-        font-size: 2.2em;
-        text-align: center; /* Ensure text is centered */
+        font-size: 2em;
     }
 
     .container p {

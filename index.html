@@ -7,45 +7,45 @@
     <link rel="stylesheet" href="src/css/main.css">
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
    <div class="container">
-   <h2><img id="banner" src="src/image/bred.gif"/>Hi, I'm Bearcat!</h2>
-   <p id="him">(He/Him)</p>
-    <p>I’m a 13-year-old frontend web developer that loves cats.</p>
-    <div id="links">
-        <a href="https://github.com/bearcattt" target="_blank" rel="noopener noreferrer">
-            <img src="src/image/github.svg" title="Github Profile" alt="My GitHub">
-        </a>
-        <a href="https://discord.com/users/997203884428767282" target="_blank" rel="noopener noreferrer">
-            <img src="src/image/discord.svg" alt="Discord" title="My Discord">
-        </a>
-        <a href="https://lunaron.top" target="_blank" rel="noopener noreferrer">
-            <img src="src/image/web.svg" title="My Proxy" alt="Website">
-        </a>
-    </div>    
+       <h2><img id="banner" src="src/image/bred.gif"/>Hi, I'm Bearcat!</h2>
+       <p id="him">(He/Him)</p>
+       <p>I’m a 13-year-old frontend web developer that loves cats.</p>
+       <div id="links">
+           <a href="https://github.com/bearcattt" target="_blank" rel="noopener noreferrer">
+               <img src="src/image/github.svg" title="Github Profile" alt="My GitHub">
+           </a>
+           <a href="https://discord.com/users/997203884428767282" target="_blank" rel="noopener noreferrer">
+               <img src="src/image/discord.svg" alt="Discord" title="My Discord">
+           </a>
+           <a href="https://lunaron.top" target="_blank" rel="noopener noreferrer">
+               <img src="src/image/web.svg" title="My Proxy" alt="Website">
+           </a>
+       </div>    
        <br>
        <div id="projects">
-        <h1>Projects</h1>
-        <body>
+           <h1>Projects</h1>
 
-    <nav>
-        <button id="openMenu">Lunar Proxy</button>
-    </nav>
+           <nav>
+               <button id="openMenu">Lunar Proxy</button>
+           </nav>
 
-    <div id="menu-overlay" class="hidden">
-        <div class="menu-content">
-            <button id="closeMenu" class="close-btn">✖</button>
-            <img src="lunar-proxy.jpg" alt="Lunar Proxy">
-            <h1>Lunar Proxy</h1>
-            <p>A web proxy to bypass censorship fast and stylistic</p>
-        </div>
+           <div id="menu-overlay" class="hidden">
+               <div class="menu-content">
+                   <button id="closeMenu" class="close-btn">✖</button>
+                   <img src="src/image/lunar-proxy.jpg" alt="Lunar Proxy">
+                   <h1>Lunar Proxy</h1>
+                   <p>A web proxy to bypass censorship fast and stylistic</p>
+               </div>
+           </div>
        </div>
-</div>
-</body>
-    <script>
-        document.getElementById("openMenu").addEventListener("click", function() {
+   </div>
+
+   <script>
+       document.getElementById("openMenu").addEventListener("click", function() {
     document.getElementById("menu-overlay").classList.remove("hidden");
 });
 
@@ -53,5 +53,6 @@ document.getElementById("closeMenu").addEventListener("click", function() {
     document.getElementById("menu-overlay").classList.add("hidden");
 });
 
-    </script>
+   </script>
+</body>
 </html>

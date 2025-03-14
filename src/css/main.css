@@ -8,6 +8,12 @@ h2 {
 nav {
     padding: 20px;
 }
+
+.projects {
+ background-color: #24273a;
+ 
+}
+
 button {
     font-size: 18px;
     padding: 10px 20px;

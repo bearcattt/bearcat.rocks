@@ -1,41 +1,59 @@
 ---
 import "@/global.css"
+import Projects from "../layouts/projects.astro"
+import Socials from "../layouts/socials.astro"
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Bearcat</title>
+  <meta name="title" content="my very cool bio page">
+  <meta property="og:title" content="my very cool bio page">
+  <meta name="description" content="bearcatttt's very cool bio page, click for a cookie">
+  <meta property="og:description" content="bearcatttt's very cool bio page, click for a cookie">
+  <link rel="icon" href="/images/tutle.webp" type="image/png" />
+  <meta property="og:image" content="/images/tutle.webp">
+  <meta name="msapplication-TileColor" content="#49517c">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-<body class="bg-bg-default text-gray-200 font-sans min-h-screen flex items-center justify-center p-6">
-  <div class="bg-bg-card rounded-2xl shadow-2xl shadow-purple-900/30 max-w-3xl w-full p-8 space-y-8 transition-all">
+<body class="font-sans min-h-screen flex items-center justify-center p-6 text-[#d0d6f9]">
+  <div
+    class="rounded-2xl shadow-2xl shadow-purple-900/40 max-w-3xl w-full p-8 space-y-8 transition-all border border-[#6c3d75] shadow-md"
+  >
     <div class="flex items-center space-x-6">
-      <img src="/images/tutle.webp" alt="Profile picture" class="w-24 h-24 rounded-full border-4 border-gray-700 shadow-lg shadow-black/30">
+      <img
+        src="/images/tutle.webp"
+        alt="Profile picture"
+        class="w-24 h-24 rounded-full"
+      />
       <div>
-        <h1 class="text-3xl font-bold text-text-default drop-shadow-md">Bearcat</h1>
-        <p class="text-gray-400 drop-shadow-sm">13yo Web Developer · Cat lover :)</p>
-      </div>
-    </div>
-    <div>
-      <h2 class="text-xl font-semibold text-text-default mb-2 drop-shadow">About Me</h2>
-      <p class="text-text-sub leading-relaxed">
-      Hey, I’m Bearcat! I’m a 13-year-old middle school student and the creator of Lunar Proxy. I am working on cool stuf!
-      </p>
-    </div>
-    <div>
-      <h2 class="text-xl font-semibold text-text-default mb-2 drop-shadow">Socials</h2>
-      <div class="flex space-x-6 items-center">
-        <a href="https://github.com/bearcattt" target="_blank" class="font-semibold flex items-center space-x-2 text-gray-300 hover:text-white hover:drop-shadow transition">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="w-5 h-5">
-          <span>GitHub</span>
-        </a>
-        <a href="https://discord.com/users/997203884428767282" target="_blank" class="font-semibold flex items-center space-x-2 hover:text-white hover:drop-shadow transition">
-          <img src="/images/dis.png" alt="Discord" class="w-5 h-5">
-          <span>Discord</span>
-        </a>
+        <h1 class="text-3xl font-bold text-[#d0d6f9] drop-shadow-md">Bearcat</h1>
+        <p class="text-[#aab0d0] drop-shadow-sm">13yo full stack developer · Cat lover :)</p>
+        <Socials />
       </div>
     </div>
 
-  </div>
+    <div>
+      <h2 class="text-xl font-semibold text-[#d0d6f9] mb-2 drop-shadow">About Me</h2>
+     <p class="text-md font-semibold text-[#aab0d0] leading-relaxed">
+      Hi, I’m Bearcat - a 13-year-old experiencing the pain of full stack development.
+     </p>
+
+      <div class="mt-6 flex justify-center">
+        <a
+  href="https://discord.com/users/997203884428767282"
+  target="_blank"
+  class="block rounded-xl overflow-hidden border border-[#6c3d75] shadow-md shadow-black/30 backdrop-blur"
+>
+
+          <img
+            src="https://lanyard.cnrad.dev/api/997203884428767282?bg=transparent&hideActivity=true&borderRadius=12px"
+            alt="Discord Status"
+          />
+        </a>
+      </div>
+    </div>
+    <Projects />
 </body>
 </html>

@@ -1,0 +1,36 @@
+---
+import { ExternalLink } from "lucide-astro"
+---
+
+<div>
+  <h2 class="text-xl font-semibold text-[#d0d6f9] mb-4 drop-shadow">Projects</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <a
+      href="https://lunaron.top"
+      target="_blank"
+      class="p-4 rounded-xl border border-[#6c3d75] shadow-md shadow-black/30 backdrop-blur bg-[rgba(108,61,117,0.15)] hover:shadow-purple-500/40 transition hover:scale-105 backdrop-blur-sm group"
+    >
+      <h3 class="text-lg font-semibold text-[#e0e4ff] mb-1 flex items-center gap-1">
+        Lunar V1
+        <ExternalLink class="w-4 h-4 text-[#aab0d0] opacity-80 group-hover:opacity-100 transition" />
+      </h3>
+      <p class="text-sm text-[#aab0d0] leading-snug">
+        A game site packed with games, apps, a proxy and a sleek user interface.
+      </p>
+    </a>
+
+    <a
+      href="https://vextools.vercel.app"
+      target="_blank"
+      class="p-4 rounded-xl border border-[#6c3d75] shadow-md shadow-black/30 backdrop-blur bg-[rgba(108,61,117,0.15)] hover:shadow-purple-500/40 transition hover:scale-105 backdrop-blur-sm group"
+    >
+      <h3 class="text-lg font-semibold text-[#e0e4ff] mb-1 flex items-center gap-1">
+        Vextools
+        <ExternalLink class="w-4 h-4 text-[#aab0d0] opacity-80 group-hover:opacity-100 transition" />
+      </h3>
+      <p class="text-sm text-[#aab0d0] leading-snug">
+        A tool for browsing and searching through VEX Robotics teams.
+      </p>
+    </a>
+  </div>
+</div>

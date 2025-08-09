@@ -7,10 +7,9 @@
   --color-text-sub: #908caa;
 }
 
-
 body {
-  background-image: url('/images/mountain.png');
-  font-family: 'Space Grotesk', sans-serif;
+  background-image: url("/a/mountain.webp");
+  font-family: "Space Grotesk", sans-serif;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

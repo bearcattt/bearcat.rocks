@@ -1,0 +1,11 @@
+---
+const { name, href, image } = Astro.props;
+---
+
+<a
+  href={href}
+  target="_blank"
+  class="flex items-center space-x-2 font-semibold text-[#aab0d0] transition hover:text-white hover:drop-shadow">
+  <img src={image} alt={name} class="h-5 w-5" />
+  <span>{name}</span>
+</a>

@@ -1,0 +1,17 @@
+---
+import { ExternalLink } from 'lucide-astro';
+const { name, description, href } = Astro.props;
+---
+
+<a
+  href={href}
+  target="_blank"
+  class="group rounded-xl border border-[#6c3d75] bg-[rgba(108,61,117,0.15)] p-4 shadow-md shadow-black/30 backdrop-blur backdrop-blur-sm transition hover:scale-105 hover:shadow-purple-500/40">
+  <h3 class="mb-1 flex items-center gap-1 text-lg font-semibold text-[#e0e4ff]">
+    {name}
+    <ExternalLink class="h-4 w-4 text-[#aab0d0] opacity-80 transition group-hover:opacity-100" />
+  </h3>
+  <p class="text-sm leading-snug text-[#aab0d0]">
+    {description}
+  </p>
+</a>

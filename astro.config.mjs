@@ -1,11 +1,12 @@
 // @ts-check
+import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
-import tailwindcss from "@tailwindcss/vite";
-import lucideAstroImportOptimizer from "./lucide.config.js";
+
+import lucideAstroImportOptimizer from './lucide.config.js';
 
 // https://astro.build/config
 export default defineConfig({
-     vite: {
+  vite: {
     plugins: [tailwindcss(), lucideAstroImportOptimizer()],
   },
 });

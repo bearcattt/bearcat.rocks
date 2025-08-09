@@ -1,6 +1,5 @@
 // Pre-compile regex for better performance
-const LUCIDE_IMPORT_PATTERN =
-  /([ \t]*)import\s+\{\s*([^}]+)\s*\}\s+from\s+['"]lucide-astro['"]/g;
+const LUCIDE_IMPORT_PATTERN = /([ \t]*)import\s+\{\s*([^}]+)\s*\}\s+from\s+['"]lucide-astro['"]/g;
 
 /**
  * Creates a Vite/Astro plugin that optimizes lucide-astro imports by converting
@@ -10,12 +9,12 @@ const LUCIDE_IMPORT_PATTERN =
  */
 function createLucideAstroImportOptimizer() {
   return {
-    name: "lucide-astro-optimizer",
+    name: 'lucide-astro-optimizer',
     transform(sourceCode, filePath) {
       if (!isValidInput(sourceCode, filePath)) return null;
 
       try {
-        if (!sourceCode.includes("lucide-astro")) return null;
+        if (!sourceCode.includes('lucide-astro')) return null;
 
         const { transformedCode, hasChanges } = transformLucideImports(sourceCode);
 
@@ -47,8 +46,12 @@ function transformLucideImports(sourceCode) {
     (match, indentation, importNames) => {
       if (!importNames.trim()) return match;
 
-      const semicolonAtEnd = match.endsWith(";");
-      const individualImports = convertToIndividualImports(importNames, indentation, semicolonAtEnd);
+      const semicolonAtEnd = match.endsWith(';');
+      const individualImports = convertToIndividualImports(
+        importNames,
+        indentation,
+        semicolonAtEnd
+      );
 
       if (individualImports) {
         hasChanges = true;
@@ -64,15 +67,15 @@ function transformLucideImports(sourceCode) {
 
 function convertToIndividualImports(importNames, indentation, withSemicolon) {
   return importNames
-    .split(",")
-    .map((name) => name.trim())
+    .split(',')
+    .map(name => name.trim())
     .filter(Boolean)
-    .map((name) => {
+    .map(name => {
       const kebabCasePath = convertToKebabCase(name);
-      const semicolon = withSemicolon ? ";" : "";
+      const semicolon = withSemicolon ? ';' : '';
       return `${indentation}import ${name} from 'lucide-astro/${kebabCasePath}'${semicolon}`;
     })
-    .join("\n");
+    .join('\n');
 }
 
 function convertToKebabCase(str) {
@@ -81,7 +84,7 @@ function convertToKebabCase(str) {
 
 function handleTransformError(error) {
   const typedError = error instanceof Error ? error : new Error(String(error));
-  console.error("Error in lucide-astro-optimizer plugin:", typedError);
+  console.error('Error in lucide-astro-optimizer plugin:', typedError);
 }
 
 export default createLucideAstroImportOptimizer;

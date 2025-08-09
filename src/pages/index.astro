@@ -1,57 +1,58 @@
 ---
-import "@/global.css"
-import Projects from "../layouts/projects.astro"
-import Socials from "../layouts/socials.astro"
+import '@/global.css';
+import Projects from '../layouts/projects.astro';
+import Socials from '../layouts/socials.astro';
 ---
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Bearcat</title>
-  <meta name="title" content="my very cool bio page">
-  <meta property="og:title" content="my very cool bio page">
-  <meta name="description" content="bearcatttt's very cool bio page, click for a cookie">
-  <meta property="og:description" content="bearcatttt's very cool bio page, click for a cookie">
-  <link rel="icon" href="/images/tutle.webp" type="image/png" />
-  <meta property="og:image" content="/images/tutle.webp">
-  <meta name="msapplication-TileColor" content="#49517c">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="font-sans min-h-screen flex items-center justify-center p-6 text-[#d0d6f9]">
-  <div class="rounded-2xl shadow-2xl shadow-purple-900/40 max-w-3xl w-full p-8 space-y-8 transition-all border border-[#6c3d75] shadow-md">
-    <div class="flex items-center space-x-6">
-      <img
-        src="/images/tutle.webp"
-        alt="Profile picture"
-        class="w-24 h-24 rounded-full"
-      />
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bearcat</title>
+    <meta name="title" content="my very cool bio page" />
+    <meta property="og:title" content="my very cool bio page" />
+    <meta name="description" content="bearcatttt's very cool bio page, click for a cookie" />
+    <meta property="og:description" content="bearcatttt's very cool bio page, click for a cookie" />
+    <link rel="icon" href="/a/tutle.webp" type="image/png" />
+    <meta property="og:image" content="/a/tutle.webp" />
+    <meta name="msapplication-TileColor" content="#49517c" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex min-h-screen items-center justify-center p-6 font-sans text-[#d0d6f9]">
+    <div
+      class="w-full max-w-3xl space-y-8 rounded-2xl border border-[#6c3d75] p-8 shadow-2xl shadow-md shadow-purple-900/40 transition-all">
+      <div class="flex items-center space-x-6">
+        <img src="/a/tutle.webp" alt="Profile picture" class="h-24 w-24 rounded-full" />
+        <div>
+          <h1 class="text-3xl font-bold text-[#d0d6f9] drop-shadow-md">Bearcat</h1>
+          <p class="text-semibold text-[#aab0d0] drop-shadow-sm">13yo certified dumbass · Cat lover :)</p>
+          <Socials />
+        </div>
+      </div>
+
       <div>
-        <h1 class="text-3xl font-bold text-[#d0d6f9] drop-shadow-md">Bearcat</h1>
-        <p class="text-[#aab0d0] text-semibold drop-shadow-sm">13yo certified dumbass · Cat lover :)</p>
-        <Socials />
-      </div>
-    </div>
+        <h2 class="mb-2 text-xl font-semibold text-[#d0d6f9] drop-shadow">About Me</h2>
+        <p class="text-md leading-relaxed font-semibold text-[#aab0d0]">
+          Hi, I’m Bearcat - a 13-year-old experiencing the pain of full stack development.
+        </p>
 
-    <div>
-      <h2 class="text-xl font-semibold text-[#d0d6f9] mb-2 drop-shadow">About Me</h2>
-      <p class="text-md font-semibold text-[#aab0d0] leading-relaxed">
-        Hi, I’m Bearcat - a 13-year-old experiencing the pain of full stack development.
-      </p>
-
-      <div class="mt-6 flex justify-center">
-        <a
-          href="https://discord.com/users/997203884428767282"
-          target="_blank"
-          class="block rounded-xl overflow-hidden border border-[#6c3d75] shadow-md shadow-black/30 backdrop-blur"
-        >
-          <img
-            src="https://lanyard.cnrad.dev/api/997203884428767282?bg=transparent&hideActivity=true&borderRadius=12px"
-            alt="Discord Status"
-          />
-        </a>
+        <div class="mt-6 flex justify-center">
+          <a
+            href="https://discord.com/users/997203884428767282"
+            target="_blank"
+            class="block overflow-hidden rounded-xl border border-[#6c3d75] shadow-md shadow-black/30 backdrop-blur">
+            <img
+              src="https://lanyard.cnrad.dev/api/997203884428767282?bg=transparent&hideActivity=true&borderRadius=12px"
+              alt="Discord Status"
+            />
+          </a>
+        </div>
       </div>
+      <Projects />
     </div>
-    <Projects />
-</body>
+  </body>
 </html>

@@ -2,6 +2,7 @@
 import '@/global.css';
 import Projects from '../layouts/projects.astro';
 import Socials from '../layouts/socials.astro';
+import Skills from '../layouts/skills.astro';
 ---
 
 <!doctype html>
@@ -37,7 +38,8 @@ import Socials from '../layouts/socials.astro';
       <div>
         <h2 class="mb-2 text-xl font-semibold text-[#d0d6f9] drop-shadow">About Me</h2>
         <p class="text-md leading-relaxed font-semibold text-[#aab0d0]">
-          Hi, I’m Bearcat! I enjoy exploring technology and am currently learning full-stack development. I’m also interested in web censorship. Below are my skills and projects. Thanks for reading!
+          Hi, I’m Bearcat! I enjoy messing with tech and I am currently learning full-stack development. I’m also
+          interested in web censorship. Below are my discord, skills and projects. Thanks for reading!
         </p>
 
         <div class="mt-6 flex justify-center">
@@ -53,15 +55,7 @@ import Socials from '../layouts/socials.astro';
         </div>
       </div>
 
-      <div class="flex flex-col items-center space-y-4">
-        <h2 class="mb-2 text-xl font-semibold text-[#d0d6f9] drop-shadow">Skills</h2>
-        <img
-          src="https://skillicons.dev/icons?i=html,astro,css,tailwind,js,ts,nodejs,npm,vscode,github,discord,linux,py&perline=13"
-          alt="Skills"
-          class="rounded-xl shadow-md shadow-purple-900/40"
-        />
-      </div>
-
+      <Skills />
       <Projects />
     </div>
   </body>

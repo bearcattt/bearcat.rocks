@@ -9,44 +9,43 @@ import Skills from '../layouts/skills.astro';
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bearcat</title>
     <meta name="title" content="my very cool bio page" />
     <meta property="og:title" content="my very cool bio page" />
     <meta name="description" content="bearcatttt's very cool bio page, click for a cookie" />
     <meta property="og:description" content="bearcatttt's very cool bio page, click for a cookie" />
-    <link rel="icon" href="/a/tutle.webp" type="image/png" />
     <meta property="og:image" content="/a/tutle.webp" />
+    <link rel="icon" href="/a/tutle.webp" type="image/webp" />
     <meta name="msapplication-TileColor" content="#49517c" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body class="flex min-h-screen items-center justify-center p-6 font-sans text-[#d0d6f9]">
-    <div
-      class="w-full max-w-3xl space-y-8 rounded-2xl border border-[#6c3d75] p-8 shadow-2xl shadow-md shadow-purple-900/40 transition-all">
+  <body class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-6 font-sans text-[#d0d6f9]">
+    <div class="w-full max-w-3xl space-y-8 rounded-2xl border border-[#6c3d75] bg-slate-800/30 p-8 shadow-2xl backdrop-blur-sm">
       <div class="flex items-center space-x-6">
-        <img src="/a/tutle.webp" alt="Profile picture" class="h-24 w-24 rounded-full" />
+        <img src="/a/tutle.webp" alt="Profile picture" class="h-24 w-24 rounded-full border-2 border-[#6c3d75]/40" />
         <div>
           <h1 class="text-3xl font-bold text-[#d0d6f9] drop-shadow-md">Bearcat</h1>
           <p class="text-semibold text-[#aab0d0] drop-shadow-sm">14yo certified dumbass · Cat lover :)</p>
-          <Socials />
+          <div class="mt-2">
+            <Socials />
+          </div>
         </div>
       </div>
-
       <div>
-        <h2 class="mb-2 text-xl font-semibold text-[#d0d6f9] drop-shadow">About Me</h2>
-        <p class="text-md leading-relaxed font-semibold text-[#aab0d0]">
-          Hi, I’m Bearcat! I enjoy messing with tech and I am currently learning full-stack development. I’m also
+        <h2 class="mb-4 text-xl font-semibold text-[#d0d6f9] border-b border-[#6c3d75]/30 pb-2">About Me</h2>
+        <p class="text-md leading-relaxed font-semibold text-[#aab0d0] mb-6">
+          Hi, I'm Bearcat! I enjoy messing with tech and I am currently learning full-stack development. I'm also
           interested in web censorship. Below are my discord, skills and projects. Thanks for reading!
         </p>
-
-        <div class="mt-6 flex justify-center">
+        <div class="flex justify-center">
           <a
             href="https://discord.com/users/997203884428767282"
             target="_blank"
-            class="block overflow-hidden rounded-xl border border-[#6c3d75] shadow-md shadow-black/30 backdrop-blur">
+            class="block overflow-hidden rounded-xl border border-[#6c3d75] shadow-lg backdrop-blur hover:border-[#6c3d75]/80 transition-colors">
             <img
               src="https://lanyard.cnrad.dev/api/997203884428767282?bg=transparent&hideActivity=true&borderRadius=12px"
               alt="Discord Status"
@@ -54,7 +53,6 @@ import Skills from '../layouts/skills.astro';
           </a>
         </div>
       </div>
-
       <Skills />
       <Projects />
     </div>

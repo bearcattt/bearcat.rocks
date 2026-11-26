@@ -8,7 +8,6 @@
   --color-muted: #6e6a86;
   --color-subtle: #908caa;
   --color-text-default: #e0def4;
-  --color-text-sub: #908caa;
   --color-border: #403d52;
   --color-love: #eb6f92;
   --color-gold: #f6c177;
@@ -71,7 +70,6 @@ button:focus-visible {
 }
 .tab-button.active-tab {
   color: #e0def4;
-  background: transparent;
 }
 .tab-button:hover {
   color: #e0def4;
@@ -115,21 +113,27 @@ button:focus-visible {
 }
 .social-link {
   color: #908caa;
-  transition:
-    color 160ms ease,
-    background-color 160ms ease;
+  transition: color 160ms ease;
 }
 .social-link:hover {
   color: #e0def4;
-  background-color: transparent;
 }
-.project-link svg {
+.project-action svg {
   transition:
     transform 160ms ease,
     color 160ms ease;
 }
-.project-link:hover svg {
+.project-action:hover svg {
   transform: translate(2px, -2px);
+  color: #eb6f92;
+}
+.project-github svg {
+  transition:
+    transform 160ms ease,
+    color 160ms ease;
+}
+.project-github:hover svg {
+  transform: scale(1.12);
   color: #eb6f92;
 }
 .project-link:hover h3 {
@@ -160,7 +164,6 @@ button:focus-visible {
     padding: 9px 2px;
   }
   .profile-card {
-    height: calc(100svh - 24px);
     max-height: calc(100svh - 24px);
     width: calc(100vw - 24px);
   }

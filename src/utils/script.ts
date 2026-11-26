@@ -49,7 +49,9 @@ async function refreshAvatar(): Promise<void> {
 
     if (avatar.src !== url) avatar.src = url;
     cacheAvatar(url);
-  } catch {}
+  } catch {
+    // Keep showing the cached avatar when the presence service is unavailable.
+  }
 }
 
 function setupTabs(): void {

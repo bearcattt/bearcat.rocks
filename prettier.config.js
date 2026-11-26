@@ -19,6 +19,7 @@ export default {
     'prettier-plugin-tailwindcss',
   ],
 
+  tailwindStylesheet: './src/global.css',
   importOrder: ['^astro:(.*)$', '^@astrojs/(.*)$', '^@?\\w', '^[./]'],
   importOrderSeparation: true,
   importOrderSortSpecifiers: true,

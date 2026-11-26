@@ -1,14 +1,19 @@
-**My Bio Site** this is the site for my bio
+# My Bio Site
 
-# **Selfhosting**
+A personal bio site built with Astro & Tailwind CSS.
 
-First, clone the repo `git clone https://github.com/bearcattt/bearcat.rocks.git`
+## Development
 
-Next, install the packages `pnpm i`
+Requires Node.js 22.23.4+
 
-Finally start it `pnpm dev`
+```sh
+git clone https://github.com/bearcattt/bearcat.rocks.git
+cd bearcat.rocks
+pnpm install
+pnpm dev
+```
 
-# Domain History
+## Domain history
 
 1. https://bearcat.rocks
 2. https://bears.codes

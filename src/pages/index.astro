@@ -11,27 +11,33 @@ import Skills from '../layouts/skills.astro';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bearcat</title>
-    <meta name="title" content="my very cool bio page" />
-    <meta property="og:title" content="my very cool bio page" />
-    <meta name="description" content="bearcatttt's very cool bio page, click for a cookie" />
-    <meta property="og:description" content="bearcatttt's very cool bio page, click for a cookie" />
-    <meta property="og:image" content="/a/tutle.webp" />
-    <link rel="icon" href="/a/tutle.webp" type="image/webp" />
+    <meta name="title" content="bearcat's bio" />
+    <meta property="og:title" content="bearcat's bio" />
+    <meta name="description" content="there are no barecat clients" />
+    <meta property="og:description" content="there are no barecat clients" />
+    <meta property="og:image" content="https://bare.tompcat.tech/a/service-worker-social.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="200" />
+    <meta property="og:image:height" content="200" />
+    <meta property="og:image:alt" content="A cat photo beside the words 200 from service worker." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://bare.tompcat.tech/a/service-worker-social.png" />
+    <link rel="icon" href="/a/cat-favicon.png" type="image/png" sizes="96x96" />
+    <link rel="apple-touch-icon" href="/a/apple-touch-icon.png" sizes="180x180" />
     <meta name="msapplication-TileColor" content="#191724" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
   <body class="flex h-[100svh] items-center justify-center overflow-hidden px-3 py-3 sm:px-6 sm:py-5">
-    <main
-      class="profile-card flex h-full w-full max-w-[720px] flex-col overflow-hidden rounded-xl border border-[#403d52] bg-[#1f1d2e]/95">
-      <header
-        class="flex min-h-16 shrink-0 items-center justify-between border-b border-[#403d52] px-10 max-sm:min-h-[60px] max-sm:px-6">
+    <main class="profile-card flex h-full w-full max-w-[720px] flex-col overflow-hidden rounded-xl border border-[#403d52] bg-[#1f1d2e]/95">
+      <header class="flex min-h-16 shrink-0 items-center justify-between border-b border-[#403d52] px-10 max-sm:min-h-[60px] max-sm:px-6">
         <a
           href="/"
           class="inline-flex items-center text-base leading-none font-medium text-[#e0def4] no-underline"
-          aria-label="Bearcat home">Bearcat</a
-        >
+          aria-label="Bearcat home">
+          Bearcat
+        </a>
         <nav aria-label="Page sections" role="tablist" class="flex items-center gap-3 text-[#908caa]">
           <button
             class="tab-button active-tab text-base leading-none font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9ccfd8]"
@@ -39,16 +45,18 @@ import Skills from '../layouts/skills.astro';
             role="tab"
             aria-selected="true"
             aria-controls="about-panel"
-            id="about-tab">Home</button
-          >
+            id="about-tab">
+            Home
+          </button>
           <button
             class="tab-button text-base leading-none font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#9ccfd8]"
             type="button"
             role="tab"
             aria-selected="false"
             aria-controls="projects-panel"
-            id="projects-tab">Projects</button
-          >
+            id="projects-tab">
+            Projects
+          </button>
         </nav>
       </header>
       <div class="min-h-0 flex-1 overflow-y-auto px-6 py-6 sm:px-10 sm:py-8">
@@ -74,11 +82,12 @@ import Skills from '../layouts/skills.astro';
               <p class="mt-2 max-w-md text-sm leading-relaxed text-[#908caa] sm:text-base">
                 A 15-year-old full-stack developer who loves cats and runs an organization called Lunar Proxy.
               </p>
-              <div class="mt-1"><Socials /></div>
+              <div class="mt-1">
+                <Socials />
+              </div>
             </div>
           </div>
-          <div
-            class="profile-details grid gap-3 border-t border-[#403d52] pt-5 leading-[1.65] sm:grid-cols-[120px_1fr] sm:gap-6">
+          <div class="profile-details grid gap-3 border-t border-[#403d52] pt-5 leading-[1.65] sm:grid-cols-[120px_1fr] sm:gap-6">
             <div class="min-w-0">
               <h2 class="text-sm font-medium text-[#e0def4]">Things I use</h2>
             </div>

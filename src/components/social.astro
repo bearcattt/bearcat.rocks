@@ -10,11 +10,9 @@ const { name, href } = Astro.props;
   aria-label={name}
   title={name}
   class="social-link grid h-10 w-10 place-items-center rounded-lg border border-transparent text-[#908caa] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#9ccfd8]">
-  {
-    name === 'GitHub' ? (
-      <Github aria-hidden="true" class="h-5 w-5" stroke-width={1.7} />
-    ) : (
-      <MessageCircle aria-hidden="true" class="h-5 w-5" stroke-width={1.7} />
-    )
-  }
+  {name === 'GitHub' ? (
+    <Github aria-hidden="true" class="h-5 w-5" stroke-width={1.7} />
+  ) : (
+    <MessageCircle aria-hidden="true" class="h-5 w-5" stroke-width={1.7} />
+  )}
 </a>

@@ -2,18 +2,23 @@
 import Project from '../components/projects.astro';
 ---
 
-<div>
-  <h2 class="mb-4 text-xl font-semibold text-[#d0d6f9] drop-shadow">Projects</h2>
-  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+<div class="projects-content">
+  <h2 class="mb-5 text-2xl font-medium tracking-tight">Projects</h2>
+  <div class="divide-y divide-[#403d52] border-t border-[#403d52]">
     <Project
       name="Lunar"
-      description="A game site packed with games, apps, a proxy and a sleek user interface."
+      description="A fast, tabbed web proxy built to bypass internet censorship."
       href="https://lunaron.top"
     />
     <Project
       name="Solar"
-      description="A cat themed discord bot with many features such as filter checking, afk & more"
-      href="https://discord.com/oauth2/authorize?client_id=1340857806177177760&permissions=563226978929665&integration_type=0&scope=bot"
+      description="Check links to see if they're blocked for the most popular school filters."
+      href="https://discord.com/discovery/applications/1340857806177177760"
+    />
+    <Project
+      name="Bearcat"
+      description="A bio site talking more about myself (this site)"
+      href="https://tompcat.tech"
     />
   </div>
 </div>

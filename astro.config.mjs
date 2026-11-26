@@ -2,11 +2,21 @@
 import tailwindcss from '@tailwindcss/vite';
 import { defineConfig } from 'astro/config';
 
-import lucideAstroImportOptimizer from './lucide.config.js';
-
 // https://astro.build/config
 export default defineConfig({
+  compressHTML: true,
+  build: {
+    inlineStylesheets: 'auto',
+  },
   vite: {
-    plugins: [tailwindcss(), lucideAstroImportOptimizer()],
+    build: {
+      minify: true,
+      cssMinify: true,
+      sourcemap: false,
+    },
+    plugins: [tailwindcss()],
+    server: {
+      allowedHosts: '',
+    },
   },
 });

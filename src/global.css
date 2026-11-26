@@ -1,19 +1,192 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg-default: #232136;
+  --font-sans: "Gabarito", sans-serif;
+  --color-bg-default: #191724;
   --color-bg-card: #1f1d2e;
+  --color-overlay: #26233a;
+  --color-muted: #6e6a86;
+  --color-subtle: #908caa;
   --color-text-default: #e0def4;
-  --color-text-sub: #908caa;
+  --color-border: #403d52;
+  --color-love: #eb6f92;
+  --color-gold: #f6c177;
+  --color-rose: #ebbcba;
+  --color-pine: #31748f;
+  --color-foam: #9ccfd8;
+  --color-iris: #c4a7e7;
+  --color-highlight-low: #21202e;
+  --color-highlight-med: #403d52;
+  --color-highlight-high: #524f67;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #191724;
 }
 
 body {
-  background-image: url("/a/mountain.webp");
-  font-family: "Space Grotesk", sans-serif;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: var(--color-bg-default);
-  color: var(--color-text-default);
+  min-height: 100vh;
+  margin: 0;
+  background: #191724 url("/a/mountain.webp") center / cover fixed no-repeat;
+  color: #e0def4;
+  font-family: "Gabarito", sans-serif;
+}
+
+body::before {
+  position: fixed;
+  z-index: 0;
+  inset: 0;
+  content: "";
+  background: rgb(25 23 36 / 76%);
+  pointer-events: none;
+}
+
+body > main {
+  position: relative;
+  z-index: 1;
+}
+a {
+  color: inherit;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #9ccfd8;
+  outline-offset: 4px;
+}
+
+.tab-button {
+  position: relative;
+  border: 0;
+  border-radius: 4px;
+  padding: 10px 4px;
+  background: transparent;
+  color: #908caa;
+  cursor: pointer;
+  transition: color 160ms ease;
+}
+.tab-button.active-tab {
+  color: #e0def4;
+}
+.tab-button:hover {
+  color: #e0def4;
+}
+.tab-button::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  content: "";
+  background: #eb6f92;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 220ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.tab-button.active-tab::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.profile-card {
+  height: min(460px, calc(100svh - 40px));
+  width: min(720px, calc(100vw - 48px));
+  min-height: min(380px, calc(100svh - 40px));
+  max-height: calc(100svh - 40px);
+}
+
+.panel-enter {
+  animation: panel-enter 220ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+.avatar {
+  border: 1px solid #403d52;
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+.avatar:hover {
+  border-color: #eb6f92;
+  transform: scale(1.025);
+}
+.social-link {
+  color: #908caa;
+  transition: color 160ms ease;
+}
+.social-link:hover {
+  color: #e0def4;
+}
+.project-action svg {
+  transition:
+    transform 160ms ease,
+    color 160ms ease;
+}
+.project-action:hover svg {
+  transform: translate(2px, -2px);
+  color: #eb6f92;
+}
+.project-github svg {
+  transition:
+    transform 160ms ease,
+    color 160ms ease;
+}
+.project-github:hover svg {
+  transform: scale(1.12);
+  color: #eb6f92;
+}
+.project-link:hover h3 {
+  color: #eb6f92;
+}
+@keyframes panel-enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-height: 560px) and (min-width: 641px) {
+  .profile-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    background-attachment: scroll;
+  }
+  .tab-button {
+    padding: 9px 2px;
+  }
+  .profile-card {
+    max-height: calc(100svh - 24px);
+    width: calc(100vw - 24px);
+  }
+  .profile-intro {
+    align-items: flex-start;
+  }
+  .profile-details {
+    gap: 10px;
+  }
+  .profile-card {
+    height: min(420px, calc(100svh - 24px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+  .avatar:hover {
+    transform: none;
+  }
 }
